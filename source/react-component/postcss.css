@@ -1,0 +1,29 @@
+/*noinspection CssInvalidMediaFeature*/
+.clicker {
+  --mainColor: wheat;
+  --headingFontSize: 24px;
+
+  color: var(--mainColor);
+
+  & img {
+    border-radius: 50%;
+    border: 2px solid transparent;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 25px;
+  }
+
+  & h1 {
+    font-size: var(--headingFontSize);
+    background-image: url("../theme/assets/images/react.svg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 40px 50%;
+    text-align: left;
+    padding-left: 100px;
+  }
+
+  @media (--phonePortrait) {
+    color: red;
+  }
+}
